@@ -6,9 +6,18 @@
 		<servlet-name>addMethod</servlet-name>
 		<servlet-class>com.test.AddServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>auth</servlet-name>
+		<servlet-class>com.test.authServlet</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>addMethod</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>auth</servlet-name>
+		<url-pattern>/auth</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
