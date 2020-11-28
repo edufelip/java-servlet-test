@@ -7,6 +7,11 @@
 <title>Main Page</title>
 </head>
 <body>
+<% 
+	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+	response.setHeader("Pragma", "no-cache"); //HTTP 1.0
+	response.setHeader("Expires", "0"); // Proxy server
+%>
 
 <%	if(session.getAttribute("username")!=null) { %>
 	<h1>Welcome, ${username}</h1>
